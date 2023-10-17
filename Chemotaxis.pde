@@ -11,10 +11,8 @@ class paw{
  }
  void show(){
    fill(r,g,b);
- pushMatrix();
    translate(x, y);
    float rot;
-   pushMatrix();
    if(addX<0){
      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
    }
@@ -28,9 +26,9 @@ class paw{
      rot = PI/2-atan(((float)-addY)/((float)addX));
    }
     rotate(rot);
-    pushMatrix();
+    
     scale(0.2);
-    pushMatrix();
+
     beginShape();
     vertex(0,0);
     bezierVertex(0+20,0-50, 0+80,0-50, 0+100,0);
@@ -39,37 +37,35 @@ class paw{
     bezierVertex(0+10,0+40, 0-20,0+40, 0,0);
     endShape();
     
-    pushMatrix();
-    translate(0-15, 0-40);
+
+    translate(-15, -40);
     rotate(-PI/6);
     ellipse(0,0, 40,60);
-    popMatrix();
+    rotate(PI/6);
+    translate(15,40);
     
-    pushMatrix();
     translate(0+25,0-75);
     rotate(-PI/12);
     ellipse(0, 0, 40, 70);
-    popMatrix();
+    rotate(PI/12);
+    translate(-25,75);
     
-    pushMatrix();
-    translate(0+115, 0-40);
+    translate(115, -40);
     rotate(PI/6);
     ellipse(0,0, 40,60);
-    popMatrix();
+    rotate(-PI/6);
+    translate(-115,40);
     
-    pushMatrix();
-    translate(0+75,0-74);
+    translate(75,-74);
     rotate(PI/12);
     ellipse(0, 0, 40, 70);
-    popMatrix();
+    rotate(-PI/12);
+    translate(-75,74);    
     
-    popMatrix();
+    scale(5);
+    rotate(-rot);
+    translate(-x,-y);
     
-    popMatrix();
-    
-    popMatrix();
-    
-    popMatrix();
 
  }
  void walk(){
@@ -114,4 +110,5 @@ void draw(){
   fill(0,0,0,50);
   rect(0,0,500,500);
 }
+
 
