@@ -31,10 +31,10 @@ class paw{
 
     beginShape();
     vertex(0,0);
-    bezierVertex(0+20,0-50, 0+80,0-50, 0+100,0);
-    bezierVertex(0+120,0+40, 0+90,0+40, 0+75,0+30);
-    bezierVertex(0+60,0+20, 0+40,0+20, 0+25,0+30);
-    bezierVertex(0+10,0+40, 0-20,0+40, 0,0);
+    bezierVertex(20,-50, 80,-50, 100,0);
+    bezierVertex(120,40, 90,40, 75,30);
+    bezierVertex(60,20, 40,20, 25,30);
+    bezierVertex(10,40, -20,40, 0,0);
     endShape();
     
 
@@ -44,7 +44,7 @@ class paw{
     rotate(PI/6);
     translate(15,40);
     
-    translate(0+25,0-75);
+    translate(25,-75);
     rotate(-PI/12);
     ellipse(0, 0, 40, 70);
     rotate(PI/12);
