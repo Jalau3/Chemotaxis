@@ -12,7 +12,7 @@ class paw{
  void show(){
    fill(r,g,b);
    translate(x, y);
-   float rot;
+   float rot=0;
    if(addX<0){
      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
    }
