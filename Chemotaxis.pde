@@ -61,7 +61,7 @@ class paw {
     translate(-75, 74);    
 
     scale(5);
-    rotate(-rot);
+  //  rotate(-rot);
     translate(-x, -y);
   }
   void walk() {
