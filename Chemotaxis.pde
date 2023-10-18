@@ -70,20 +70,24 @@ class paw {
     x += addX;
     y += addY;
     if (x > 500) {
-      while (x > 500)
+      while (x > 500){
         x = x-10;
+      }
     }
     if (y < 0) {
-      while (x < 0)
+      while (x < 0){
         x = x+10;
+      }
     }
     if (y > 500) {
-      while (y > 500)
+      while (y > 500){
         y = y-10;
+      }
     }
     if (y < 0) {
-      while (y < 0)
+      while (y < 0){
         y = y+10;
+      }
     }
   }
 }
@@ -95,7 +99,7 @@ void setup() {
   for (int i = 0; i<dots.length; i++) {
     dots[i] = new paw();
   }
-  //frameRate(4);
+  frameRate(4);
 }
 void draw() {
   for (int j = 0; j<dots.length; j++) {
