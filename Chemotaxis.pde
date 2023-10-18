@@ -12,17 +12,17 @@ class paw {
   void show() {
     fill(r, g, b);
     translate(x, y);
- //if (addX<0) {
-      //rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
-   // } else if (addX ==0) {
-    //  if (addY>0)
-     //   rot = PI;
-    //  else
-    //    rot = 0;
-  //  } else {
-  //    rot = PI/2-atan(((float)-addY)/((float)addX));
-  //  }
-    rot = 0.1;
+    float rot = 0;
+    if (addX<0) {
+      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
+    } else if (addX ==0) {
+      if (addY>0)
+        rot = PI;
+      else
+        rot = 0;
+    } else {
+      rot = PI/2-atan(((float)-addY)/((float)addX));
+    }
     rotate(rot);
 
     scale(0.2);
