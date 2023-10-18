@@ -89,6 +89,16 @@ class paw {
         y = y+10;
       }
     }
+    if (addX<0) {
+      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
+    } else if (addX ==0) {
+      if (addY>0)
+        rot = PI;
+      else
+        rot = 0;
+    } else {
+      rot = PI/2-atan(((float)-addY)/((float)addX));
+    }
   }
 }
 paw [] dots;
