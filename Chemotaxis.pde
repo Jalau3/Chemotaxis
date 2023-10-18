@@ -102,8 +102,8 @@ void draw() {
     dots[j].show();
     dots[j].walk();
   }
-  fill(0, 0, 0, 50);
-  rect(0, 0, 500, 500);
+  //fill(0, 0, 0, 50);
+  //rect(0, 0, 500, 500);
 }
 
 
