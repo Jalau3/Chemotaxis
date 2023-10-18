@@ -14,14 +14,16 @@ class paw {
     translate(x, y);
     float rot = 0;
     if (addX<0) {
-      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
+      float angle = (float)(-addY)/(float)(addX);
+      rot = PI/2-atan(angle)+PI;
     } else if (addX ==0) {
       if (addY>0)
         rot = PI;
       else
         rot = 0;
     } else {
-      rot = PI/2-atan(((float)-addY)/((float)addX));
+      float angle = (float)(-addY)/(float)(addX);
+      rot = PI/2-atan(angle);
     }
     rotate(rot);
 
