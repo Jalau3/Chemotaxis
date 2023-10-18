@@ -1,6 +1,6 @@
 class paw {
   int x, y, r, g, b, addX, addY;
-  //float rot;
+  float rot;
   paw() {
     x = (int)(Math.random()*500);
     y = (int)(Math.random()*500);
@@ -19,6 +19,7 @@ class paw {
   //  } else {
   //    rot = PI/2-atan(((float)-addY)/((float)addX));
   //  }
+    rot = 0.1;
   }
   void show() {
     fill(r, g, b);
@@ -61,7 +62,7 @@ class paw {
     translate(-75, 74);    
 
     scale(5);
-  //  rotate(-rot);
+    rotate(-rot);
     translate(-x, -y);
   }
   void walk() {
