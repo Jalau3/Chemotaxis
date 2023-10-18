@@ -95,7 +95,7 @@ void setup() {
   for (int i = 0; i<dots.length; i++) {
     dots[i] = new paw();
   }
-  frameRate(4);
+  //frameRate(4);
 }
 void draw() {
   for (int j = 0; j<dots.length; j++) {
