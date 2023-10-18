@@ -10,8 +10,8 @@ class paw {
     b = (int)(Math.random()*256);
   }
   void show() {
-    //fill(r, g, b);
-    //translate(x, y);
+    fill(r, g, b);
+    translate(x, y);
     //float rot;
     //if (addX<0) {
       //rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
