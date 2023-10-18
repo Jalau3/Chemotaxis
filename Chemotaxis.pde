@@ -1,6 +1,6 @@
 class paw {
   int x, y, r, g, b, addX, addY;
-  float rot;
+  //float rot;
   paw() {
     x = (int)(Math.random()*500);
     y = (int)(Math.random()*500);
@@ -9,16 +9,16 @@ class paw {
     r = (int)(Math.random()*256);
     g = (int)(Math.random()*256);
     b = (int)(Math.random()*256);
-    if (addX<0) {
-      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
-    } else if (addX ==0) {
-      if (addY>0)
-        rot = PI;
-      else
-        rot = 0;
-    } else {
-      rot = PI/2-atan(((float)-addY)/((float)addX));
-    }
+    //if (addX<0) {
+      //rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
+   // } else if (addX ==0) {
+    //  if (addY>0)
+     //   rot = PI;
+    //  else
+    //    rot = 0;
+  //  } else {
+  //    rot = PI/2-atan(((float)-addY)/((float)addX));
+  //  }
   }
   void show() {
     fill(r, g, b);
@@ -89,16 +89,16 @@ class paw {
         y = y+10;
       }
     }
-    if (addX<0) {
-      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
-    } else if (addX ==0) {
-      if (addY>0)
-        rot = PI;
-      else
-        rot = 0;
-    } else {
-      rot = PI/2-atan(((float)-addY)/((float)addX));
-    }
+//    if (addX<0) {
+//      rot = PI/2-(atan(((float)-addY)/((float)addX)))+PI;
+//    } else if (addX ==0) {
+//      if (addY>0)
+//        rot = PI;
+//      else
+//        rot = 0;
+//    } else {
+//      rot = PI/2-atan(((float)-addY)/((float)addX));
+//    }
   }
 }
 paw [] dots;
